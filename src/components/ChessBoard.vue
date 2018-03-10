@@ -8,7 +8,7 @@
           :id="position.location"
           v-for="position in positions"
           :key="position.location"
-          @click="logMove(position)">
+          @click="recordMove(position)">
         </span>
       </div>
     </div>
@@ -23,16 +23,15 @@ export default {
   data() {
     return {
       positions: boardPositions,
+      position: null,
       isBlack: false,
-      clickedPosition: '',
-      moveHistory: []
+      clickedPosition: ''
     }
   },
   methods: {
-    logMove(position) {
+    recordMove(position) {
       this.clickedPosition = position
-      this.moveHistory.push(position.location)
-      // console.table(this.moveHistory)
+      this.$emit('moveMade', position);
     }
   }
 }
