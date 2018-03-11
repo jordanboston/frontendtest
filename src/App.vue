@@ -35,7 +35,7 @@ export default {
   methods: {
     logMove(position) {
       this.moveHistory.push(position.location)
-      console.table(this.moveHistory)
+      // console.table(this.moveHistory)
     },
     resetMoves() {
       this.moveHistory = []
