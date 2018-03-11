@@ -16,5 +16,7 @@ Welcome to the [Chess.com](https://chess.com) front end programming challenge!
 6. Keep track of which squares are clicked and the order in which they're clicked.
 7. Display the information collected from step 6 in the sidebar.
 
+MY DEMO: https://jordanboston.github.io/frontendtest
+
 # Questions & Feedback
 Please contact Chuck Haines (chaines@gmail.com) with any questions or feedback regarding this challenge.
